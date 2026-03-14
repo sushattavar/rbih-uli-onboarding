@@ -121,13 +121,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--brown);color:var(--brown)
   font-weight:900;color:var(--white);line-height:0.95;letter-spacing:-1px;
   animation:heroFadeDown 1s 0.18s cubic-bezier(.22,1,.36,1) both;margin-bottom:24px;
 }
-.landing-title .accent{color:var(--red);position:relative;display:inline-block;}
-.landing-title .accent::after{
-  content:'';position:absolute;bottom:3px;left:0;right:0;height:4px;
-  background:linear-gradient(90deg,var(--red),var(--red-l));border-radius:2px;
-  animation:lineGrow 0.8s 1.2s cubic-bezier(.22,1,.36,1) both;transform-origin:left;
-}
-@keyframes lineGrow{from{transform:scaleX(0);}to{transform:scaleX(1);}}
+.landing-title .accent{color:var(--red);display:inline-block;}
 .landing-sub{
   font-size:clamp(14px,2vw,16px);color:rgba(245,239,230,0.5);
   max-width:500px;line-height:1.75;font-weight:300;
@@ -773,14 +767,14 @@ input[type=file]{display:none;}
       <div class="ps">
         <div class="ps-left"><div class="ps-num">04</div><div class="ps-ico">🗝️</div></div>
         <div class="ps-right">
-          <div class="ps-tag">Sandbox Keys</div>
-          <div class="ps-title">Generate Sandbox Credentials</div>
+          <div class="ps-tag">Sandbox Credentials</div>
+          <div class="ps-title">Access Your Sandbox Credentials</div>
           <div class="ps-body">
-            You will be redirected to a new window. On the <strong>left side menu</strong>, click on <strong>Sandbox Keys</strong>. This gives you access to:<br><br>
+            You will be redirected to a new window. On the <strong>left side menu</strong>, click on <strong>Sandbox Keys</strong>. This gives you access to your sandbox credentials for the non-production environment:<br><br>
             <ol>
               <li><strong>Client ID</strong> — your application identifier for the non-production environment</li>
               <li><strong>Client Secret</strong> — your application secret key</li>
-              <li><strong>Generate Token button</strong> — click this to generate an access token for authenticating your API calls during integration testing</li>
+              <li>To generate an access token for API testing, click the <strong>Generate Token</strong> button on this screen</li>
             </ol>
           </div>
         </div>
